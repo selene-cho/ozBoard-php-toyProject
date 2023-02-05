@@ -1,6 +1,6 @@
 <header>
   <div>
-    <a href="../home/index.php" class="logo">OZ Coding School</a>
+    <a href="../home/index.php" class="logo"><img src="../img/ozcoding_logo.png"></a>
   </div>
   <ul class="top_menu">
     <li><a href="#">공지사항</a></li>

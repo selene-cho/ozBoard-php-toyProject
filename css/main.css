@@ -1,16 +1,16 @@
 @font-face {
   font-family: "NEXON Lv2 Gothic";
-  src: url("./images/NEXON_Lv2_Gothic.woff");
+  src: url("./NEXON\ Lv2\ Gothic.woff") format("woff");
 }
 
 @font-face {
   font-family: "NEXON Lv2 Gothic Light";
-  src: url("./images/NEXON_Lv2_Gothic.woff");
+  src: url("./NEXON\ Lv2\ Gothic\ Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "NEXON Lv2 Gothic Bold";
-  src: url("./images/NEXON_Lv2_Gothic.woff");
+  src: url("./NEXON\ Lv2\ Gothic\ Bold.woff") format("woff");
 }
 /* reset */
 * {
@@ -30,6 +30,8 @@ a {
 
 body {
   font-family: "NEXON Lv2 Gothic", "Montserrat", "Noto Sans KR", "Sans-Serif";
+}
+.container {
   width: 100vw;
   height: 100vh;
   background-image: url("../img/bg_main.jpg");
@@ -45,38 +47,60 @@ header {
   left: 0;
   z-index: 100;
   background: rgba(7, 7, 7, 0.49);
-  padding: 30px 0;
+  padding: 15px 0;
   color: #fff;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
 }
-.logo {
+header .logo img {
   padding: 0 20px;
+  width: 200px;
 }
 .top_menu {
-  justify-content: center;
-}
-.top_menu li {
+  display: flex;
 }
 .sub_menu {
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 .sub_menu button {
+  all: unset;
+  cursor: pointer;
   padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.49);
+  border-radius: 5px;
+  font-family: "NEXON Lv2 Gothic Light";
 }
+/* sign in & login */
 
 /* main */
+
+/* notice */
+
+/* qna */
+
+/* simple board */
 
 /* footer */
 footer {
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: fixed;
   left: 0;
   bottom: 0;
   background: rgba(7, 7, 7, 0.49);
   color: white;
   padding: 50px 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
+.footer_title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footer_text {
+  font-size: 0.8rem;
+  height: 20px;
+  line-height: 20px;
+}
+
+/* admin */
