@@ -24,7 +24,7 @@ create table notice
     noti_title varchar(100) not null,
     noti_regi_date datetime not null,
     noti_edit_date datetime,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action
 );
 
@@ -37,9 +37,6 @@ create table notice_content
     foreign key (noti_unq_id)
     references notice(noti_unq_id) on update cascade on delete cascade
 );
-
-select * from notice_content;
-drop table notice_content;
 
 create table notice_comment
 (
