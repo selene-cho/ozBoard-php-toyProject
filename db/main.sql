@@ -49,7 +49,7 @@ create table notice_comment
     noti_cmt_cnt text not null,
     noti_cmt_regi_date datetime not null,
     noti_cmt_edit_date datetime,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action ,
     foreign key (noti_unq_id)
     references notice(noti_unq_id) on update cascade on delete cascade
@@ -62,8 +62,8 @@ create table qna
     qna_title varchar(100) not null,
     qna_regi_date datetime not null,
     qna_edit_date datetime,
-    foreign key (user_unq_id)
-    references member(unq_id) on update cascade on delete set null
+    foreign key (mbr_unq_id)
+    references member(unq_id) on update cascade on delete no action
 );
 
 create table qna_recommend
@@ -71,7 +71,7 @@ create table qna_recommend
     qna_rcmd_unq_id int auto_increment primary key,
     mbr_unq_id int,
     qna_unq_id int not null,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action ,
     foreign key (qna_unq_id)
     references qna(qna_unq_id) on update cascade on delete cascade
@@ -95,7 +95,7 @@ create table qna_comment
     qna_cmt_cnt text not null,
     qna_cmt_regi_date datetime not null,
     qna_cmt_edit_date datetime,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action ,
     foreign key (qna_unq_id)
     references qna(qna_unq_id) on update cascade on delete cascade
@@ -106,7 +106,7 @@ create table qna_comment_recommend
     qna_cmt_rcmd_unq_id int auto_increment primary key,
     mbr_unq_id int,
     qna_cmt_unq_id int not null ,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action ,
     foreign key (qna_cmt_unq_id)
     references qna_comment(qna_cmt_unq_id) on update cascade on delete cascade
@@ -120,7 +120,7 @@ create table simple_board
     sb_cnt text not null,
     sb_regi_date datetime not null,
     sb_edit_date datetime,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action
 );
 
@@ -132,7 +132,7 @@ create table simple_board_comment
     sb_cmt_cnt text not null,
     sb_cmt_regi_date datetime not null,
     sb_cmt_edit_date datetime,
-    foreign key (user_unq_id)
+    foreign key (mbr_unq_id)
     references member(unq_id) on update cascade on delete no action ,
     foreign key (sb_unq_id)
     references simple_board(sb_unq_id) on update cascade on delete cascade
