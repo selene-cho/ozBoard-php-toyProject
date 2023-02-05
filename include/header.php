@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-</head>
-
-<body>
-  <header>
-    Hello
-  </header>
-
-</body>
-
-</html>
+<header>
+  <div>
+    <a href="../home/index.php" class="logo">OZ Coding School</a>
+  </div>
+  <ul class="top_menu">
+    <li><a href="#">공지사항</a></li>
+    <li><a href="#">QnA</a></li>
+    <li><a href="#">주말 수강장 이용 | 결석 사유 입력</a></li>
+  </ul>
+  <div class="sub_menu">
+    <button type="button" onclick="location.href='#'">Login</button>
+    <button><a href="#">Join</a></button>
+    <button><a href="#">Logout</a></button>
+    <button><a href="#">정보수정</a></button>
+    <!-- <button><a href='#'>회원관리</a></button> -->
+  </div>
+</header>
