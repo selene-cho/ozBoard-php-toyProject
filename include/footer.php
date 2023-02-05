@@ -1,5 +1,8 @@
 <footer>
   <div class="footer_title">
+    <a href="https://ozcodingschool.com/" target="_blank">
+      <img src="../img/oz_logo.png" alt="oz logo img" />
+    </a>
     <p>린스타트업 맞춤형 Serverless MVP 개발 전문가 양성 과정</p>
   </div>
   <ul class="footer_text">
